@@ -10,7 +10,7 @@ development:
   database: myapp_development
   pool: 5
   username: myappuser1
-  password: myappuser1
+  password: 
 
 test:
   adapter: postgresql
@@ -18,7 +18,7 @@ test:
   database: myapp_test
   pool: 5
   username: myappuser1
-  password: myappuser1
+  password: 
 
 production:
   adapter: postgresql
@@ -26,4 +26,4 @@ production:
   database: myapp_test
   pool: 5
   username: myappuser1
-  password: myappuser1
+  password: 
