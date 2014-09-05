@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root to:'sections#index'
+  
   resources :myministers
 
   resources :ministries
@@ -11,7 +13,6 @@ Rails.application.routes.draw do
   resources :name_titles
 
   resources :questions
-
   resources :question_types
 
   resources :directors
