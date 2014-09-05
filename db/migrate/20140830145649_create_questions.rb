@@ -1,9 +1,10 @@
 class CreateQuestions < ActiveRecord::Migration
   def change
     create_table :questions do |t|
-      t.belongs_to :question_type, index: true
-      t.belongs_to :notice, index: true
-      t.belongs_to :section, index: true
+      
+      t.integer :question_type_id, index: true
+      t.integer :notice_id, index: true
+      t.integer :section_id, index: true
       t.integer :question_no
       t.belongs_to :session, index: true
       t.string :subject

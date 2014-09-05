@@ -4,7 +4,7 @@ class CreateQuestionDetails < ActiveRecord::Migration
       t.string :question_text
       t.string :answer_text
       t.string :statement_text
-      t.belongs_to :question, index: true
+      t.integer :question_id, index: true
 
       t.timestamps
     end
